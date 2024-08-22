@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="Pt-BR">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador de texto</title>
+        <link rel="stylesheet" href="styles.css">
+
+
+    </head>
+
+
+    <body>
+        <header class="header">
+            
+            <div class="logo">
+                <img src="Logo.png" alt="Logo alura"> 
+                <h1 class="titulo">Decodificador de Texto</h1h> 
+            </div>
+
+            
+        </header>
+
+        <main class="main-container"> <!-- Seção de entrada de dados pelo usuário -->
+            <section class="input-section">
+                <!-- Área de texto onde o usuário insere a mensagem -->
+                <textarea placeholder="Digite aqui" id="inputTextArea"></textarea>
+                <!-- Mensagem de validação exibida abaixo da área de texto -->
+                <img src="exclamacao.png" alt="exclamacao">
+                <span>Apenas letras minúsculas e sem acento.</span>
+                <!-- Contêiner para os botões de criptografar e descriptografar -->
+                <div class="buttons">
+                    <button id="cript" onclick=btEncriptar()">Criptografar</button> <!-- Botão para criptografar a mensagem -->
+                    <button id="descript" onclick=btDescriptografar()>Descriptografar</button> <!-- Botão para descriptografar a mensagem -->
+                </div>
+            </section>
+
+            <!-- Seção de saída dos resultados -->
+            <section class="output-section">
+                <!-- Contêiner inicial que exibe uma imagem e mensagens padrão -->
+                 <div id="imageContainer" class="image-container">
+                    <img src="image.png" alt="Boneco Alura"> <!-- Imagem padrão exibida inicialmente -->
+                    <p class="nenhumaMsg">Nenhuma mensagem encontrada</p> <!-- Mensagem padrão exibida inicialmente -->
+                    <p class="digiteO">Digite o texto que você deseja criptografar ou descriptografar</p> <!-- Instrução para o usuário -->
+                </div>
+
+                <!-- Contêiner para exibir o texto processado (criptografado/descriptografado) -->
+                <div class="output-container" >
+                  <!--<textarea class="mensagem" cols="20" rows="10"></textarea> --> 
+                  <div class="mensagem"></div>
+                </div> 
+
+                   <!-- <div id="outputText" class="output-text"> --> 
+                <div> <!-- Área onde o texto processado será exibido -->
+                    <button id="copyBtn" class="copy-button">Copiar</button> <!-- Botão para copiar o texto processado -->
+                </div>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Desenvolvido por Raquel Brayner - 2024</p>
+            <p> <strong>Challenge Alura - Programa OneNextEducation</strong></p> <!-- Informação do criador e ano do projeto -->
+
+        </footer>
+        <script src="script.js"></script>
+        
+    </body>
+    </html>
